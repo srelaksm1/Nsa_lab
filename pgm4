@@ -1,0 +1,57 @@
+developer@ccfl6-pc53:~$ ls|wc
+
+developer@ccfl6-pc53:~$ ls a*
+
+developer@ccfl6-pc53:~/a1$ wc -L f1
+
+developer@ccfl6-pc53:~/a1$ echo "hello world"|wc
+
+developer@ccfl6-pc53:~/a1$ echo "hello world"|wc -l
+
+developer@ccfl6-pc53:~/a1$ echo "hello world"|wc -m
+
+developer@ccfl6-pc53:~/a1$ cat >a1
+hello Sreelakshmi!
+how are youuuuuu.......Glad to meet you!!!
+
+
+developer@ccfl6-pc53:~/a1$ cut -c1-5 a1
+hello
+how a
+
+developer@ccfl6-pc53:~/a1$ echo "Hello World!"|cut -c2-4
+ell
+
+developer@ccfl6-pc53:~$ nano a5.csv
+developer@ccfl6-pc53:~$ cut -d',' -f1 a5.csv
+a
+b
+c
+
+developer@ccfl6-pc53:~$ cut -d',' -f1-2 a5.csv
+a,3
+b,4
+c,5
+
+
+developer@ccfl6-pc53:~$ nano a10.csv
+developer@ccfl6-pc53:~$ nano a11.csv
+developer@ccfl6-pc53:~$ paste a10.csv a11.csv
+hey	hai
+how	are u
+gud	bye
+	
+developer@ccfl6-pc53:~$ paste -d',' a10.csv a11.csv
+hey,hai
+how,are u
+gud,bye
+
+developer@ccfl6-pc53:~$ paste -s a10.csv
+hey	how	gud	
+
+developer@ccfl6-pc53:~$ paste -d','  -s a10.csv
+hey,how,gud,
+
+
+,
+
